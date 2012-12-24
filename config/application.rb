@@ -60,3 +60,5 @@ module Datatrader
     config.assets.version = '1.0'
   end
 end
+
+require 'carrierwave/orm/activerecord'
