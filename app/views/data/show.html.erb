@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Description:</b>
+  <%= @datum.description %>
+</p>
+
+<p>
+  <b>Name:</b>
+  <%= @datum.name %>
+</p>
+
+<p>
+  <b>Schema:</b>
+  <%= @datum.schema %>
+</p>
+
+<p>
+  <b>Data:</b>
+  <%= link_to 'Download', @datum.data.url %>
+</p>
+
+
+<%= link_to 'Edit', edit_datum_path(@datum) %> |
+<%= link_to 'Back', data_path %>
