@@ -6,9 +6,16 @@
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
 </head>
-<body>
 
+
+<body>
+    <p class="notice"><%= notice %></p>
+    <p class="alert"><%= alert %></p>
 <%= yield %>
+
+<% if current_user %>
+<p > <%= current_user.email %> </p>
+<% end %>
 
 </body>
 </html>
