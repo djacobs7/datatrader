@@ -39,3 +39,4 @@ gem 'jquery-rails'
 #
 gem 'carrierwave'
 gem 'devise'
+gem 'bootstrap-sass'

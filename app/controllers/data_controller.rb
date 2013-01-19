@@ -43,7 +43,7 @@ class DataController < ApplicationController
   # POST /data.json
   def create
     @datum = Datum.new(params[:datum])
-
+    @datum.make_plot
     respond_to do |format|
       if @datum.save
         format.html { redirect_to @datum, notice: 'Datum was successfully created.' }
@@ -59,7 +59,7 @@ class DataController < ApplicationController
   # PUT /data/1.json
   def update
     @datum = Datum.find(params[:id])
-
+    @datum.make_plot
     respond_to do |format|
       if @datum.update_attributes(params[:datum])
         format.html { redirect_to @datum, notice: 'Datum was successfully updated.' }

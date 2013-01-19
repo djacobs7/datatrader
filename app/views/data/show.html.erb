@@ -20,6 +20,6 @@
   <%= link_to 'Download', @datum.data.url %>
 </p>
 
-
+<%= image_tag(@datum.image_url) %>
 <%= link_to 'Edit', edit_datum_path(@datum) %> |
 <%= link_to 'Back', data_path %>
